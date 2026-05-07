@@ -1,0 +1,40 @@
+# Exam Repository System
+
+A Flask-based web application for storing and managing exam papers for students and teachers.
+
+---
+
+## Features
+- Admin Login
+- Student Access
+- Upload Exam Papers
+- Download Papers
+- Semester-wise Subjects
+- SQLite Database
+- Feedback Section
+- Simple Modern UI
+
+---
+
+## Technologies Used
+- Python
+- Flask
+- SQLite
+- HTML
+- CSS
+
+---
+
+## Project Structure
+
+```bash
+EXAM REPOSITORY SYSTEM/
+│
+├── app.py
+├── exam.db
+├── templates/
+├── uploads/
+├── static/
+└── README.md
+
+Note : this project only have two paper's for now (maths,chemistry) 
