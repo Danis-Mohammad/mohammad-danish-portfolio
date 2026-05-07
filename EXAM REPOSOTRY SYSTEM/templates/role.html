@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Repository</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <h1>🎓 Exam Repository</h1>
+        <p>Select your role</p>
+
+        <!-- Role Buttons -->
+        <div class="actions">
+
+    <!-- Teacher -->
+    <form method="POST">
+        <input type="hidden" name="role" value="teacher">
+
+        <button type="submit" class="btn teacher">
+            Teacher
+        </button>
+    </form>
+
+    <!-- Student -->
+    <form method="POST">
+        <input type="hidden" name="role" value="student">
+
+        <button type="submit" class="btn student">
+            Student
+        </button>
+    </form>
+
+</div>
+
+        <!-- About Us -->
+        <div class="info-section">
+            <h2>About Us</h2>
+
+            <p>
+                The Exam Repository System is designed for B.Tech AIML students
+                to easily access previous year question papers.
+                Teachers can upload or delete papers while students can
+                view and download them anytime.
+            </p>
+        </div>
+
+        <!-- Feedback -->
+        <div class="info-section">
+            <h2>Feedback</h2>
+
+           <form method="POST" action="{{ url_for('feedback') }}">
+
+    <input type="text"
+           name="name"
+           placeholder="Your Name"
+           required>
+
+    <textarea
+        name="message"
+        placeholder="Write your feedback here..."
+        required>
+    </textarea>
+
+    <button type="submit" class="btn teacher">
+        Submit Feedback
+    </button>
+
+</form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
