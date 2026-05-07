@@ -1,2 +1,1 @@
-# mohammad-danish-portfolio
-my coding projects and work samples
+My Oasis-Infobyte Internship projects (1-month)
